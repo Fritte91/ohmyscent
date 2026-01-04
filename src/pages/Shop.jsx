@@ -124,7 +124,7 @@ const Shop = () => {
                     )}
                     <img
                       src={product.image}
-                      className={`w-full h-full object-contain p-8 transition-transform duration-500 ${product.available ? 'group-hover:scale-110' : 'grayscale'}`}
+                      className={`w-full h-full object-contain p-4 md:p-8 transition-transform duration-500 ${product.available ? 'group-hover:scale-110' : 'grayscale'}`}
                       alt={product.name}
                       loading="lazy"
                       onError={(e) => {

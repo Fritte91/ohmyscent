@@ -39,22 +39,22 @@ const Navigation = () => {
         Skip to main content
       </a>
       <nav className="sticky top-4 z-50 px-4 md:px-8">
-        <div className="bg-paper/80 backdrop-blur-md border-2 border-ink rounded-xl shadow-hard flex justify-between items-center p-3 md:p-4 transition-all hover:shadow-hard-xl">
+        <div className="bg-paper/80 backdrop-blur-md border-2 border-ink rounded-xl shadow-hard flex justify-between items-center p-2 md:p-4 transition-all hover:shadow-hard-xl gap-2">
           {/* Mobile Menu */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 hover:bg-acid rounded-lg border border-transparent hover:border-ink transition-all"
+            className="md:hidden p-1.5 hover:bg-acid rounded-lg border border-transparent hover:border-ink transition-all flex-shrink-0"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
-              <X className="w-6 h-6 stroke-[1.5]" />
+              <X className="w-5 h-5 stroke-[1.5]" />
             ) : (
-              <Menu className="w-6 h-6 stroke-[1.5]" />
+              <Menu className="w-5 h-5 stroke-[1.5]" />
             )}
           </button>
 
         {/* Logo */}
-        <Link to="/" className="text-xl md:text-2xl font-display tracking-tighter flex items-center gap-1 group">
+        <Link to="/" className="text-lg md:text-2xl font-display tracking-tighter flex items-center gap-1 group min-w-0 flex-1 md:flex-none">
           OH MY <span className="text-acid text-shadow-sm group-hover:text-ink transition-colors" style={{ WebkitTextStroke: '1px #0A2A1F' }}>SCENT!</span>
         </Link>
 
@@ -68,7 +68,7 @@ const Navigation = () => {
         </div>
 
         {/* Actions */}
-        <div className="flex items-center gap-2 md:gap-3">
+        <div className="flex items-center gap-1.5 md:gap-3 flex-shrink-0">
           {/* Locale Toggle */}
           <LanguageToggle />
 
@@ -78,9 +78,10 @@ const Navigation = () => {
           >
             <Search className="w-5 h-5 stroke-[1.5]" />
           </button>
+          {/* Desktop Cart Button */}
           <Link
             to="/cart"
-            className="bg-ink text-acid px-3 md:px-4 py-2 rounded-lg font-display text-xs md:text-sm border-2 border-ink hover:bg-acid hover:text-ink transition-colors flex items-center gap-2 group"
+            className="hidden md:flex bg-ink text-acid px-4 py-2 rounded-lg font-display text-sm border-2 border-ink hover:bg-acid hover:text-ink transition-colors items-center gap-2 group"
             aria-label={`${t('common.cart')} (${cartCount} ${cartCount === 1 ? 'item' : 'items'})`}
           >
             <span>{t('common.cart')} ({cartCount})</span>
@@ -97,7 +98,7 @@ const Navigation = () => {
       {mobileMenuOpen && (
         <div className="fixed inset-0 bg-ink/80 backdrop-blur-sm z-40 md:hidden" onClick={() => setMobileMenuOpen(false)}>
           <div
-            className="bg-paper border-2 border-ink rounded-xl shadow-hard-xl m-4 p-6 space-y-4"
+            className="bg-paper border-2 border-ink rounded-xl shadow-hard-xl mt-28 mx-4 mb-4 p-6 space-y-4"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-center mb-4">
@@ -151,6 +152,25 @@ const Navigation = () => {
           </div>
         </div>
       )}
+
+      {/* Floating Cart Button (Mobile Only) */}
+      <Link
+        to="/cart"
+        className="fixed bottom-6 right-6 md:hidden bg-ink text-acid p-4 rounded-full shadow-hard-xl border-2 border-ink hover:bg-acid hover:text-ink transition-all z-50 group"
+        aria-label={`${t('common.cart')} (${cartCount} ${cartCount === 1 ? 'item' : 'items'})`}
+      >
+        <div className="relative">
+          <ShoppingBag className="w-6 h-6 stroke-[1.5] group-hover:fill-ink" />
+          {cartCount > 0 && (
+            <>
+              <span className="absolute -top-2 -right-2 bg-acid text-ink text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center border-2 border-ink">
+                {cartCount}
+              </span>
+              <span className="sr-only">{cartCount} {cartCount === 1 ? 'item' : 'items'} in cart</span>
+            </>
+          )}
+        </div>
+      </Link>
     </>
   );
 };

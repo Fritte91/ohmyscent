@@ -37,23 +37,23 @@ const Products = () => {
   };
 
   return (
-    <section className="py-24 border-b-2 border-ink relative bg-white/50">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 mb-12 flex items-center justify-between">
-        <h2 className="font-display text-4xl md:text-5xl tracking-tighter">{t('products.freshJuice')}</h2>
-        <div className="flex gap-2">
+    <section className="py-12 md:py-24 border-b-2 border-ink relative bg-white/50">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 mb-8 md:mb-12 flex items-center justify-between gap-4">
+        <h2 className="font-display text-3xl md:text-5xl tracking-tighter">{t('products.freshJuice')}</h2>
+        <div className="flex gap-2 flex-shrink-0">
           <button
             onClick={() => scrollProducts('left')}
-            className="w-10 h-10 border-2 border-ink rounded-lg flex items-center justify-center hover:bg-acid transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-8 h-8 md:w-10 md:h-10 border-2 border-ink rounded-lg flex items-center justify-center hover:bg-acid transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label={t('common.scrollLeft') || 'Scroll left'}
           >
-            <ArrowRight className="w-5 h-5 rotate-180" />
+            <ArrowRight className="w-4 h-4 md:w-5 md:h-5 rotate-180" />
           </button>
           <button
             onClick={() => scrollProducts('right')}
-            className="w-10 h-10 border-2 border-ink rounded-lg flex items-center justify-center hover:bg-acid transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-8 h-8 md:w-10 md:h-10 border-2 border-ink rounded-lg flex items-center justify-center hover:bg-acid transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label={t('common.scrollRight') || 'Scroll right'}
           >
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
           </button>
         </div>
       </div>
@@ -61,7 +61,7 @@ const Products = () => {
       {/* Scroll Container */}
       <div
         ref={scrollContainerRef}
-        className="flex overflow-x-auto gap-6 px-4 md:px-8 pb-12 no-scrollbar snap-x snap-mandatory max-w-[100vw]"
+        className="flex overflow-x-auto gap-4 md:gap-6 px-4 md:px-8 pb-8 md:pb-12 no-scrollbar snap-x snap-mandatory max-w-[100vw]"
       >
         {products.map((product) => {
           const getBadgeText = (badge) => {
@@ -86,9 +86,9 @@ const Products = () => {
             <Link
               key={product.id}
               to={`/product/${product.id}`}
-              className="min-w-[280px] md:min-w-[320px] snap-center group"
+              className="min-w-[240px] md:min-w-[320px] snap-center group"
             >
-              <div className={`relative bg-white border-2 border-ink rounded-2xl aspect-square mb-4 overflow-hidden shadow-sm group-hover:shadow-hard transition-all duration-300 ${!product.available ? 'opacity-70' : ''}`}>
+              <div className={`relative bg-white border-2 border-ink rounded-xl md:rounded-2xl aspect-square mb-3 md:mb-4 overflow-hidden shadow-sm group-hover:shadow-hard transition-all duration-300 ${!product.available ? 'opacity-70' : ''}`}>
                 {product.badge && (
                   <div className={`absolute top-3 left-3 z-10 ${getBadgeColor()} border border-ink px-2 py-0.5 text-[10px] font-bold rounded uppercase`}>
                     {getBadgeText(product.badge)}
@@ -136,12 +136,12 @@ const Products = () => {
         {/* See All Card */}
         <Link
           to="/shop"
-          className="min-w-[280px] md:min-w-[320px] snap-center flex flex-col justify-center items-center border-2 border-ink border-dashed rounded-2xl aspect-square hover:bg-white transition-colors cursor-pointer group"
+          className="min-w-[240px] md:min-w-[320px] snap-center flex flex-col justify-center items-center border-2 border-ink border-dashed rounded-xl md:rounded-2xl aspect-square hover:bg-white transition-colors cursor-pointer group"
         >
-          <div className="w-16 h-16 bg-acid rounded-full flex items-center justify-center border-2 border-ink mb-4 group-hover:scale-110 transition-transform">
-            <ArrowRight className="w-8 h-8 stroke-[2]" />
+          <div className="w-12 h-12 md:w-16 md:h-16 bg-acid rounded-full flex items-center justify-center border-2 border-ink mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+            <ArrowRight className="w-6 h-6 md:w-8 md:h-8 stroke-[2]" />
           </div>
-          <h3 className="font-display text-xl">{t('products.viewAll')}</h3>
+          <h3 className="font-display text-lg md:text-xl">{t('products.viewAll')}</h3>
         </Link>
       </div>
     </section>
