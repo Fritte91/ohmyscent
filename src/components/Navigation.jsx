@@ -64,6 +64,7 @@ const Navigation = () => {
           <Link to="/shop?category=men" className="hover:text-acid hover:bg-ink px-3 py-1 rounded transition-colors">{t('nav.men')}</Link>
           <Link to="/shop?category=women" className="hover:text-acid hover:bg-ink px-3 py-1 rounded transition-colors">{t('nav.women')}</Link>
           <Link to="/shop?category=discoverySets" className="hover:text-acid hover:bg-ink px-3 py-1 rounded transition-colors">{t('nav.discoverySets')}</Link>
+          <Link to="/about" className="hover:text-acid hover:bg-ink px-3 py-1 rounded transition-colors">{t('nav.about')}</Link>
         </div>
 
         {/* Actions */}
@@ -136,6 +137,13 @@ const Navigation = () => {
               className="block hover:text-acid hover:bg-ink px-4 py-2 rounded transition-colors font-medium"
             >
               {t('nav.discoverySets')}
+            </Link>
+            <Link
+              to="/about"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block hover:text-acid hover:bg-ink px-4 py-2 rounded transition-colors font-medium"
+            >
+              {t('nav.about')}
             </Link>
             <div className="pt-4 border-t border-ink/20">
               <LanguageToggle />
