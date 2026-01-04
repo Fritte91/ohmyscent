@@ -1,0 +1,191 @@
+{
+  "common": {
+    "cart": "CART",
+    "search": "Search",
+    "menu": "Menu",
+    "viewAll": "View All",
+    "addToCart": "Add to Cart",
+    "addedToCart": "added to cart",
+    "removedFromCart": "removed from cart",
+    "shopNow": "SHOP NOW",
+    "findMyScent": "FIND MY SCENT",
+    "join": "JOIN",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "back": "Back",
+    "free": "FREE",
+    "scrollLeft": "Scroll left",
+    "scrollRight": "Scroll right"
+  },
+  "marquee": {
+    "authenticDecants": "✸ Authentic Decants",
+    "fastDelivery": "✸ Fast Delivery BKK & Nationwide",
+    "freeShipping": "✸ Free Shipping ฿1500+",
+    "originalJuice": "✸ 100% Original Juice",
+    "codAvailable": "✸ COD Available"
+  },
+  "nav": {
+    "newArrivals": "NEW ARRIVALS",
+    "men": "MEN",
+    "women": "WOMEN",
+    "discoverySets": "DISCOVERY SETS",
+    "th": "TH",
+    "en": "EN"
+  },
+  "hero": {
+    "badge": "Tropical Weather Approved",
+    "title1": "SMELL LIKE",
+    "title2": "A MILLION",
+    "title3": "BAHT.",
+    "description": "Why buy one full bottle when you can own the whole collection? Premium authentic decants delivered to your door.",
+    "lovedBy": "Loved by",
+    "thais": "Thais"
+  },
+  "ticker": {
+    "brandName": "OH MY SCENT!",
+    "originalBrands": "ORIGINAL BRANDS",
+    "startsAt": "STARTS AT ฿199",
+    "fastShipping": "FAST SHIPPING"
+  },
+  "categories": {
+    "sectionTitle": "Curated Collections",
+    "heading": "Find Your\nVibe",
+    "viewAllCollections": "View All Collections",
+    "trending": "TRENDING IN BKK",
+    "dateNightKillers": "DATE NIGHT\nKILLERS",
+    "dateNightDescription": "Seductive scents for the humid nights. Long lasting projection.",
+    "officeSafe": "OFFICE SAFE",
+    "officeSafeTag": "Clean & Professional",
+    "mysteryBox": "MYSTERY BOX",
+    "mysteryBoxPrice": "3 Scents for ฿990",
+    "hotDeal": "HOT DEAL"
+  },
+  "whyUs": {
+    "authentic": {
+      "title": "100% AUTHENTIC",
+      "description": "Extracted directly from the original bottle with syringe. Zero dilution. We hate fakes as much as you do."
+    },
+    "climate": {
+      "title": "CLIMATE STORED",
+      "description": "All perfumes are stored in temperature controlled dark rooms. Preserved perfectly for the Thai heat."
+    },
+    "tryBeforeBuy": {
+      "title": "TRY BEFORE BUY",
+      "description": "Don't spend ฿10,000 blindly. Test it on your skin first with our 2ml, 5ml or 10ml options."
+    }
+  },
+  "products": {
+    "freshJuice": "FRESH JUICE",
+    "bestseller": "Bestseller",
+    "longLasting": "Long Lasting",
+    "soldOut": "Sold Out",
+    "viewAll": "VIEW ALL 500+"
+  },
+  "testimonials": {
+    "badge": "Real Talk",
+    "title": "STREET CRED",
+    "subtitle": "Don't just take our word for it.",
+    "verified": "Verified",
+    "review1": {
+      "text": "\"Finally a way to try Creed without selling my kidney. Packaging is safe, arrived in Bangkok in 2 days.\"",
+      "author": "Thanakorn",
+      "location": "Bangkok"
+    },
+    "review2": {
+      "text": "\"I was skeptical about decants but Oh My Scent! is the real deal. High quality atomizers that spray a fine mist. 10/10.\"",
+      "author": "Ploy P.",
+      "location": "Chiang Mai"
+    },
+    "review3": {
+      "text": "\"Ordered the Discovery Set. Loved 3 out of 5 so came back for 10ml sizes. Super fun experience.\"",
+      "author": "Somchai K.",
+      "location": "Phuket"
+    }
+  },
+  "newsletter": {
+    "title": "DON'T BE STINKY.",
+    "description": "Join the club. Get 15% off your first decant and find out when we drop the rare stuff.",
+    "emailPlaceholder": "your@email.com",
+    "disclaimer": "No spam, just scents. Unsubscribe anytime.",
+    "success": "Successfully subscribed! Check your email.",
+    "subscribeButton": "Subscribe to newsletter"
+  },
+  "footer": {
+    "tagline": "Making niche fragrance accessible to everyone in Thailand. 100% Authentic.",
+    "shop": {
+      "title": "SHOP",
+      "newArrivals": "New Arrivals",
+      "mensCologne": "Men's Cologne",
+      "womensPerfume": "Women's Perfume",
+      "unisex": "Unisex",
+      "discoverySets": "Discovery Sets"
+    },
+    "help": {
+      "title": "HELP",
+      "trackOrder": "Track Order",
+      "shippingInfo": "Shipping Info",
+      "returns": "Returns & Exchange",
+      "contact": "Contact Us",
+      "faq": "FAQ"
+    },
+    "follow": {
+      "title": "FOLLOW US",
+      "lineId": "Line ID: @OhMyScent"
+    },
+    "copyright": "© 2024 Oh My Scent! Bangkok. Est. 2024.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "emptyDescription": "Start adding some scents to your cart!",
+    "continueShopping": "Continue Shopping",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "checkout": "PROCEED TO CHECKOUT",
+    "remove": "Remove",
+    "quantity": "Quantity",
+    "freeShippingNote": "Free shipping on orders over ฿1500"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shippingInfo": "Shipping Information",
+    "paymentMethod": "Payment Method",
+    "orderSummary": "Order Summary",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "postalCode": "Postal Code",
+    "country": "Country",
+    "placeOrder": "PLACE ORDER",
+    "backToCart": "Back to Cart",
+    "paymentNote": "Payment integration will be configured here",
+    "paymentPlaceholder": "Payment integration will be configured here. This is a placeholder."
+  },
+  "shop": {
+    "title": "Shop All Products",
+    "allCategories": "All Categories",
+    "filter": "Filter",
+    "sort": "Sort",
+    "noProducts": "No products found",
+    "showing": "Showing",
+    "results": "results"
+  },
+  "productDetail": {
+    "breadcrumbHome": "Home",
+    "breadcrumbShop": "Shop",
+    "size": "SIZE",
+    "inStock": "In Stock",
+    "shipsFrom": "Ships from BKK",
+    "olfactoryNotes": "OLFACTORY NOTES",
+    "youMightAlsoLike": "YOU MIGHT ALSO LIKE",
+    "addToCart": "ADD TO CART",
+    "soldOut": "SOLDOUT"
+  }
+}
+
